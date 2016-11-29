@@ -1,0 +1,10 @@
+{% extends "main.html" %}
+{% block info %}
+	<h1>Hola desde templates</h1>
+	{% for elemento in data  %}
+		<p>{{elemento}}</p> 
+	{% endfor %}
+
+
+{% endblock info %}
+	

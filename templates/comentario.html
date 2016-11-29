@@ -1,0 +1,17 @@
+{% extends "main.html" %}
+{% block info %}
+	<h1>Desde Comentario</h1>	
+	</br>
+	</br>
+	<!--comentario-->
+	<form method="POST" action="/api">
+		{{form.csrf_token}}
+		<p> {{form.publicacion.label}} </p>
+		<p> {{form.publicacion}} </p>
+		<p>{{form.publicacion.errors}}</p>
+		<input type="submit" value="Publicar">
+	</form>
+	Id de comentario es : {{data}}
+
+{% endblock info %}
+	

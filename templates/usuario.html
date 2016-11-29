@@ -1,0 +1,11 @@
+{% extends "main.html" %}
+{% block info %}
+	<h1>Hola desde usuario1</h1>
+	<p>Estatus {{data.status_code }}</p>
+	<p>Headers {{data.headers }}</p>
+	<p>Texto {{data.text }}</p>
+	<p>Json {{data.json()}}</p>
+	<p>Nombre {{data.json().name}}</p>
+
+{% endblock info %}
+	
